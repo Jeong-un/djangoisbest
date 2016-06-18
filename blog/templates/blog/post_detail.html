@@ -10,7 +10,7 @@
 
     <div id="map" style="width: 600px; height: 300px;"></div>
 
-    <img src="{{ post.photo.url }}" />
+    <img src="{{ post.photo.url }}" style="max-width: 50%;" />
     {{ post.content|linebreaks }}
 
     <a href="{% url "blog:comment_new" post.pk %}">댓글쓰기</a>
